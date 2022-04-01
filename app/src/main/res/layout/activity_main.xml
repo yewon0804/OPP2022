@@ -11,6 +11,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!-- 연습문제 4-7 -->
         <CheckBox
             android:id="@+id/onOffEnable"
             android:text="Enabled 속성"
@@ -26,13 +27,18 @@
             android:text="45도 회전"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
         <Button
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:text="Button" />
+
+        <!-- 연습문제 4-8 -->
+        <EditText
+            android:id="@+id/returnToast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
