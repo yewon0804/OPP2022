@@ -40,5 +40,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <!-- 연습문제 4-9 -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/turnImg"
+            android:drawableLeft="@drawable/ic_launcher_foreground"
+            android:drawableRight="@drawable/ic_launcher_foreground"
+            android:text="회전하기"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_launcher_background" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
     // 4-8
     EditText returnToast;
 
+    // 4-9
+    Button turnimg;
+    ImageView img;
+    int howMuch = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (onOffEnable.isChecked()) {
-                    button1.setEnabled(true);
+                    button1.setEnabled(false);
                 }
                 else {
-                    button1.setEnabled(false);
+                    button1.setEnabled(true);
                 }
             }
         });
@@ -91,5 +96,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /* **************************************
+         * 프로그램명: 연습문제 4-9
+         * 작성자: 2020039035 김예원
+         * 작성일: 2022. 04. 01.
+         * 프로그램 설명: 버튼을 클릭하면 이미지가 10도씩 회전하는 프로그램
+           + 버튼에도 이미지가 들어감(drawableLeft, drawableRight)
+         * ***************************************/
+
+        turnimg = (Button) findViewById(R.id.turnImg);
+        img = (ImageView) findViewById(R.id.img);
+
+        turnimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                howMuch += 10;
+                img.setRotation(howMuch);
+            }
+        });
     }
 }
