@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             imageView.setPadding(5,5,5,5);
 
             imageView.setImageResource(posterID[position]); // R.drawable.mov0x 이미지를 로드하여 출력
-            //TODO 이미지를 클릭했을 때, 원래 이미지 크기가 보이도록 함
+
             final int pos = position;
             imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
